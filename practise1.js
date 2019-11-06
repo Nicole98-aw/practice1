@@ -1,4 +1,12 @@
-var element1 = document.querySelector("h1");
-element1.innerText = "My fav programming language";
-var element2 = document.querySelector("p");
-element2.innerText = "I love to code in JS";
+function Cat(name, color){
+    this.name = name;
+    this.color = color;
+}
+var Fluffy = new Cat('Fluffy', 'Brown');
+// console.log(Cat.prototype);
+// console.log(Fluffy.__proto__);
+console.log(Fluffy);
+ 
+
+
+
