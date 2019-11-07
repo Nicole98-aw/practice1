@@ -1,19 +1,19 @@
 let spaceship = {
     'Fuel type': 'Turbo',
-    color: 'silver',
-    'Secret mission': 'Discover life outside of earth',
-    'homePlanet': 'Earth'
+    homeplanet: 'Earth'
 };
-spaceship.numOfEngines = 9;
-spaceship.color = 'glorious gold';
 
-const alienship = {
-    invade() {
-        console.log("We've come to invade your planet");
-    }
-};
-alienship.invade();
+let greenEnergy = obj => {
+    obj['Fuel type'] = 'avocado oil'
+}
+
+let remotelyDisabled = obj => {
+    obj['diabled'] = true
+}
+
+greenEnergy(spaceship);
+remotelyDisabled(spaceship);
+
 console.log(spaceship);
-
 
 
