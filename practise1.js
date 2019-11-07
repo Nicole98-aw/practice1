@@ -1,27 +1,24 @@
-// const person = {
-//     _firstName:'Nicky',
-//     _lastName: 'Gandolfo',
-//     get fullName() {
-//         if(this._firstName && this._lastName) {
-//             return `${this._firstName} ${this._lastName}`;
-//         } else {
-//             return 'Missing a first name or a last name';
-//         }
-//     }
-// }
-// person.fullName;
-// console.log(person.fullName);
+//Using setters to reassign values to object properties
 
-const car = {
-    _name: 'Audi RS6',
-    _color: 'silver',
-    get color() {
-        if (this._color = 'silver') {
-            return `My Audi's color is ${this._color}`;
+const robot = {
+    _model: 'NE644',
+    _energyLevel: 100,
+    _numOfSensors: 15,
+    get numOfSensors() {
+        if ( typeof this._numOfSensors === 'number'){
+            return this._numOfSensors;
         } else {
-            return 'Invalid input';
+            return 'Sensors are currently down';
+        }
+    },
+    set numOfSensors(num) {
+        if ( typeof num === 'number' && num >= 0){
+            return this._numOfSensors = num;
+        } else {
+            'Pass in a number that is equal or greater than 0'
         }
     }
 }
-console.log(car.color);
 
+robot.numOfSensors = 100;
+console.log(robot.numOfSensors);
