@@ -1,12 +1,19 @@
-function Cat(name, color){
-    this.name = name;
-    this.color = color;
-}
-var Fluffy = new Cat('Fluffy', 'Brown');
-// console.log(Cat.prototype);
-// console.log(Fluffy.__proto__);
-console.log(Fluffy);
- 
+let spaceship = {
+    'Fuel type': 'Turbo',
+    color: 'silver',
+    'Secret mission': 'Discover life outside of earth',
+    'homePlanet': 'Earth'
+};
+spaceship.numOfEngines = 9;
+spaceship.color = 'glorious gold';
+
+const alienship = {
+    invade() {
+        console.log("We've come to invade your planet");
+    }
+};
+alienship.invade();
+console.log(spaceship);
 
 
 
